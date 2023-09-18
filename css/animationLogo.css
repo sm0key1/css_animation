@@ -1,0 +1,52 @@
+div{
+    background:linear-gradient(#ffec00, black) ;
+    border: solid 2px black;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top:20px ;
+    padding-bottom: 25%;
+    padding-left: 30px;
+    padding-top: 25px;
+
+}
+
+@keyframes myimage {
+
+    0%{  border-color:white; }
+    25%{ border-color: white;}
+    50%{  border-color: green;} 
+    75%{  border-color:black }
+    100%{ border-color: yellow;
+        transform : rotate3d(1, -5, 1, -60deg);
+    }
+
+
+}
+
+
+img{
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: solid 3px  ;
+    border-color:black; 
+    
+   
+    animation-name: myimage;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease;
+    animation-direction:alternate ;
+    transition: transform 3s;
+transition-delay: 4s;
+transition-timing-function: ease-in-out;
+    
+}
+
+img:hover{
+
+    transform: scale(-0.5, 1);
+    
+}
+
